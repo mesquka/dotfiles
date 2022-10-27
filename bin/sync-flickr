@@ -1,0 +1,3 @@
+#!/bin/zsh
+source $HOME/.zshrc
+node $HOME/.local/bin/flickr-userphotos-fetcher/fetch.js

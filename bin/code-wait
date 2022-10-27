@@ -1,0 +1,7 @@
+#!/bin/zsh
+if [[ "$TERM_PROGRAM" = "vscode" ]]
+then
+  code --reuse-window --wait "$@"
+else
+  code --new-window --wait "$@"
+fi

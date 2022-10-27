@@ -1,0 +1,25 @@
+[core]
+	excludesfile = ~/.gitignore
+	pager = cat
+	editor = code --wait
+[user]
+	name = Kieran Mesquita
+	email = me@mesquka.com
+	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdS7TMOjLJQj62hTbpGT87GMrPrAxkvQ+onu/pdpgTk mesquka
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpg-sign = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[alias]
+	tag = tag -s
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
